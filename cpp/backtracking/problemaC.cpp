@@ -10,7 +10,7 @@ int backtracking(vector<int> &p, int i){
     int op1 = backtracking(p, i*2);
     int op2 = backtracking(p, (i*2) + 1);
 
-    return p[i] + min(op1, op2);
+    return p[i] + max(op1, op2);
 }
     
 int main(){
